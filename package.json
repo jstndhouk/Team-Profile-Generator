@@ -1,0 +1,19 @@
+{
+  "name": "teamgenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "generate.js",
+  "scripts": {
+    "start": "node generate",
+    "watch": "nodemon index",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.2.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
