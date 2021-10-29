@@ -1,3 +1,5 @@
+const inquirer = require('inquirer');
+
 class Engineer {
     constructor() {
         this.questions = [{

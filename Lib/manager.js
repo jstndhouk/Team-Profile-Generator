@@ -1,24 +1,25 @@
 class Manager {
     constructor() {
-        this.questions = [{
+        this.questions = [
+            {
                 type: 'input',
-                message: 'What is their name?',
-                name: 'name',
+                message: "What is the manager's name?",
+                name: 'name'
             },
             {
                 type: 'input',
-                message: 'What is their ID?',
-                name: 'id',
+                message: "What is the their ID?",
+                name: 'id'
             },
             {
                 type: 'input',
                 message: 'What is their email?',
-                name: 'email',
+                name: 'email'
             },
             {
                 type: 'input',
                 message: 'What is their office number?',
-                name: 'officeNumber',
+                name: 'officeNumber'
             }
         ]
     }
