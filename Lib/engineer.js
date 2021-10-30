@@ -1,5 +1,4 @@
 const inquirer = require('inquirer');
-
 class Engineer {
     constructor() {
         this.questions = [{
@@ -27,11 +26,15 @@ class Engineer {
     createEngineer(){
         inquirer.prompt(this.questions)
         .then((response) =>{
-            let createManager = ({name, id, email, github}) =>{
-                this.name=name;
-                this.id=id;
-                this.email=email;
-                this.github=github;}}
+            //There has to be a better way to do this...
+                this.name=response.name;
+                this.id=response.id;
+                this.email=response.email;
+                this.github=response.github;
+                console.log("The engineer object is"+this.name+this.id+this.email+this.github);
+                team.push(this);
+                nextEmployee();
+            }
         )
     }
 }

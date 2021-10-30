@@ -29,13 +29,15 @@ class Intern {
     createIntern() {
         inquirer.prompt(this.questions)
             .then((response) => {
-                let createIntern = ({name,id,email,school}) => {
-                    this.name = name;
-                    this.id = id;
-                    this.email = email;
-                    this.school = school;
+                this.name=response.name;
+                this.id=response.id;
+                this.email=response.email;
+                this.school=response.github;
+                console.log("The intern object is"+this.name+this.id+this.email+this.school);
                 }
-            })
+            )
+        team.push(this);
+        nextEmployee();
     }
 }
 module.exports = Intern;

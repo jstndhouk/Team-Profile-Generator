@@ -23,5 +23,13 @@ class Manager {
             }
         ]
     }
+    createManager = ({name, id, email, officeNumber}) =>{
+        this.name=name;
+        this.id=id;
+        this.email=email;
+        this.officeNumber=officeNumber;
+        console.log("The manager data is"+this.name+this.id+this.email+this.officeNumber);
+        
+    }
 }
 module.exports = Manager;
