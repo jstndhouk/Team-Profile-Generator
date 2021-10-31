@@ -1,22 +1,9 @@
 class Employee {
-    constructor() {
-        this.questions = [{
-                type: 'input',
-                message: 'What is their name?',
-                name: 'name',
-            },
-            {
-                type: 'input',
-                message: 'What is their ID?',
-                name: 'id',
-            },
-            {
-                type: 'input',
-                message: 'What is their email?',
-                name: 'email',
-            }
-        ]
-    }
+    constructor(name, id, email) {
+        this.name = name;
+        this.id = id;
+        this.email = email;
 
+    }
 }
 module.exports = Employee;
