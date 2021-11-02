@@ -13,7 +13,7 @@ describe("Manager", () => {
             expect(manager).toEqual(managerData);
         });
     });
-    describe("create object", () => {
+    describe("return role", () => {
         it("return the string manager", () => {
             const managerData = {
                 name: 'Justin',
@@ -27,4 +27,60 @@ describe("Manager", () => {
             expect(managerString).toEqual(getTheRole);
         });
     });
+    describe("return name", () => {
+        it("return the name with the getName method", () => {
+            const managerData = {
+                name: 'Justin',
+                id: '555',
+                email: 'jstndhouk@gmail.com',
+                officeNumber: '321'
+            }
+            const managerNameString = 'Justin'
+            const manager = new Manager(managerData)
+            const getTheName = manager.getName();
+            expect(managerNameString).toEqual(getTheName);
+        })
+    })
+    describe("return id", () => {
+        it("return the id with the getId method", () => {
+            const managerData = {
+                name: 'Justin',
+                id: '555',
+                email: 'jstndhouk@gmail.com',
+                officeNumber: '321'
+            }
+            const managerIdString = '555'
+            const manager = new Manager(managerData)
+            const getTheId = manager.getId();
+            expect(managerIdString).toEqual(getTheId);
+        })
+    })
+    describe("return email", () => {
+        it("return the email with the getEmail method", () => {
+            const managerData = {
+                name: 'Justin',
+                id: '555',
+                email: 'jstndhouk@gmail.com',
+                officeNumber: '321'
+            }
+            const managerEmailString = 'jstndhouk@gmail.com'
+            const manager = new Manager(managerData)
+            const getTheEmail = manager.getEmail();
+            expect(managerEmailString).toEqual(getTheEmail);
+        })
+    })
+    describe("return office number", () => {
+        it("return the office number with the getOfficeNum method", () => {
+            const managerData = {
+                name: 'Justin',
+                id: '555',
+                email: 'jstndhouk@gmail.com',
+                officeNumber: '321'
+            }
+            const managerOfficeNumString = '321'
+            const manager = new Manager(managerData)
+            const getTheOfficeNum = manager.getEmail();
+            expect(managerOfficeNumString).toEqual(getTheOfficeNum);
+        })
+    })
 })
