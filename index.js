@@ -192,6 +192,7 @@ const generateCards=(team)=>{
               type="text/javascript"
               src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js">
             </script>
+            <meta content="width=device-width, initial-scale=1" name="viewport" />
             <script
               src="https://code.jquery.com/jquery-3.5.1.min.js"
               integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
