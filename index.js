@@ -80,7 +80,6 @@ inquirer.prompt(managerq)
     .then((response) =>{
     const manager= new Manager(response);
     team.push(manager);
-    console.log(response)
     nextEmployee();
     })
 
@@ -133,9 +132,9 @@ const generateManagerCard=(team)=>{
         <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
     </h5>
       <p class="card-text">${name}</p>
-      <p class="card-text">ID:${id}</p>
+      <p class="card-text">ID:  ${id}</p>
       <a href="mailto:${email}"class="card-text">Email: ${email}</a>
-      <p class="card-text">Office Number:${officeNumber}</p>
+      <p class="card-text">Office Number: ${officeNumber}</p>
     </div>
 </div>`
 return managerCard
@@ -203,7 +202,7 @@ const generateCards=(team)=>{
             <div class="container-fluid py-5 bg-dark">
                 <h1 class="display-5 fw-bold text-light headerAlign">My Team</h1>
               </div>
-              <main>
+              <main class='theMain'>
     ${generateManagerCard(team)}
     ${generateEngineerCards(team)}
     ${generateInternsCard(team)}

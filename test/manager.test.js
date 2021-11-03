@@ -79,7 +79,7 @@ describe("Manager", () => {
             }
             const managerOfficeNumString = '321'
             const manager = new Manager(managerData)
-            const getTheOfficeNum = manager.getEmail();
+            const getTheOfficeNum = manager.getOfficeNum();
             expect(managerOfficeNumString).toEqual(getTheOfficeNum);
         })
     })
