@@ -1,11 +1,22 @@
 .headerAlign{
     text-align: center;
 }
-main{
+.theMain{
     display:flex;
     flex-direction: row;
     align-items:center ;
     justify-content: space-around;
     margin-top:10%;
     flex-wrap: wrap;
+    text-align: center;
+    padding-bottom:0px;
+}
+p{
+    margin-bottom:0px;
+}
+
+@media screen and (max-width: 870px) {
+    .theMain{
+        flex-direction: column;
+    }
 }
